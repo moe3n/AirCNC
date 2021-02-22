@@ -1,0 +1,336 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  
+  font-weight: 600;
+}
+
+h1{
+  font-size: 22px;
+  color: #666a6c
+  margin: 0;
+
+
+}
+h2{
+  font-size: 1.3em;
+  margin: 0;
+}
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 7px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo img{
+
+  border-right: 1px solid #dce0e0;
+}
+
+/*
+ * info
+*/
+
+.info{
+  text-decoration: none;
+  text-align: center;
+  padding: 30px;
+  background: white;
+  
+}
+.info .profile img{
+  width: 90px;
+  border-radius: 50%;
+}
+.info .relationship, .info .name{
+  color: #909597;
+}
+
+
+
+.info .icons {
+  float: left;
+  width: 33%;
+  padding: 30px;
+
+ }
+ .info h1{
+  margin-top: 10px;
+ }
+ .info p{
+  padding-top: 5px;
+ }
+
+ .info .booking h1{
+  padding-bottom: 20px;
+ }
+
+
+ .info .booking h2{
+  font-weight: 600;
+  font-size: 22px;
+ }
+
+/*
+ * about
+*/
+
+.about{
+  text-decoration: none;
+  text-align: center;
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #dce0e0;
+  
+}
+.about p{
+  text-align: left;
+
+}
+
+/*
+ * care
+*/
+
+.care{
+  text-align: left;
+  
+  width: 90%;
+  padding: 40px;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.25em;
+  border-bottom: 1px solid #dce0e0;
+
+}
+
+/*
+ * games
+*/
+
+.games{
+  text-align: left;
+  width: 90%;
+  padding: 40px;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.25em;
+  border-bottom: 1px solid #dce0e0;
+}
+.frisbeeimg{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.frisbee{
+  display: inline-block;
+  vertical-align: middle;
+}
+.poolimg{
+  display: inline-block;
+  vertical-align: middle;
+}
+.pool{
+  display: inline-block;
+  vertical-align: middle;
+}
+.fetchimg{
+  display: inline-block;
+  vertical-align: middle;
+}
+.fetch{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+ * photos
+*/
+
+
+.photos{
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
+/*
+ * Slideshow
+*/
+
+.mySlides{
+  display: none;
+  margin: auto;
+}
+.mySlides img{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+@media only screen and (min-width: 1030px){
+
+
+
+
+
+/*
+ * info
+*/
+
+.info{
+  margin: auto;
+  text-align: center;
+  
+}
+ .container{
+  width: 1040px;
+  margin: 0 auto;
+  background:red;
+}
+.column{
+  float: left;
+}
+
+.info .owner-details{
+  width: 660px;
+}
+.info .button{
+  width: 380px;
+}
+
+.info .profile{
+  width: 20%;
+}
+.info .pet-name{
+  
+  text-align: left;
+  padding-left: 30px;
+
+}
+.info .icon{
+  padding: 0;
+  width: 300px;
+  text-align: left;
+
+}
+
+/*
+ * about
+*/
+
+.about{
+  text-decoration: none;
+  text-align: left;
+  padding: 40px;
+  width: 70%;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #dce0e0;
+  
+}
+.about h2{
+  text-align: center;
+
+}
+
+/*
+ * care
+*/
+
+.care{
+  text-align: center;
+  display: flex;
+  width: 70%;
+  padding: 40px;
+  margin: auto;
+  line-height: 1.2em;
+  border-bottom: 1px solid #dce0e0;
+
+}
+.care-header{
+  float: left;
+  width: 150px;
+  
+}
+.diet, .checkin{
+  text-align: left;
+  margin: auto;
+  float: left;
+  padding-right:30px; 
+}
+
+.games{
+  text-align: center;
+  display: flex;
+  width: 70%;
+  padding: 40px;
+  margin: auto;
+  line-height: 1.2em;
+  border-bottom: 1px solid #dce0e0;
+  
+
+
+}
+.games-header{
+  float: left;
+  width: 150px;
+  padding-left: 20px;
+  
+}
+
+.game-names{
+  text-align: left;
+  margin-right: auto;
+  float: left;
+  padding-left:20px; 
+}
+
+
+}

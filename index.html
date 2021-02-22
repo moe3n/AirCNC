@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AirCnC - Rent a Cat or Dog</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/small.css" media="(max-width:600px)"> -->
+  <meta name="description" content="AirC&amp;C is the premiere site renting cute cats and canines">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	<section class="logo">
+	  	<img src="images/logo.png">
+	  </section>
+	  <section class="cover-image">
+	  	<img src="images/dog-hero-image.png" style="width: 100%">
+	</section>
+	<div class="clearfix info">
+		<div class="container">
+		<div class="column owner-details">
+			<div class="profile column">
+				<img src="images/profile2.JPG">
+				<h2 class="relationship">Owner</h2>
+				<h2 class="name">Mahmud</h2>
+			</div><!-- .profile-->
+			<div class="clearfix pet-details column">
+				<div class="pet-name">
+				<h1>Mahmud, Golden Retriever</h1>
+				<p>New York, NY, United States</p>
+				</div>
+				
+			<div class="icon column">
+			<div class="icons">
+				<img src="images/icons/mute.svg" alt="Doesn't Bark">
+				<h5>Doesn't Bark</h5>
+			</div>
+			<div class="icons">
+				<img src="images/icons/baby.svg" alt="Kid Friendly">
+				<h5>Kid Friendly</h5>
+			</div>
+			<div class="icons">
+				<img src="images/icons/lightning.svg" alt="Energetic">
+				<h5>Energetic</h5>
+			</div> 
+			</div><!-- .icons-->
+			</div> <!-- .pet-details-->
+			
+		</div>  <!-- .owner-detals-->
+		<div class=" column booking">
+			<h1>$30 <span>Per Day</span></h1>
+			<a href="#" class="button"> Request to book</a>
+			
+		</div><!-- .booking-->
+	</div>
+	</div> <!-- .info-->
+
+	<div class="about">
+		<h2> <strong>About this Dog</strong></h2>
+		<p><br><br>The Golden Retriever is a large-sized breed of dog bred as gun dogs to retrieve shot waterfowl such as ducks and upland game birds during hunting and shooting parties and were named 'retriever' because of their ability to retrieve shot game undamaged. Golden Retrievers have an instinctive lover of water and are easy to train to basic or advanced obedience standards. <br><br></p>
+		<a href="#" style="color: rgb(227, 25, 29)"><strong>Contact Owner</strong></a>
+	</div> <!--- .about --> 
+	<div class="care">
+		<div class="care-header">
+			<p>Care <br><br></p>
+		</div>
+		
+		<div class="diet">
+			<p>Diet: <strong>Dog Food</strong><br>
+			Favorite Toy: <strong>A Frisbee</strong></p>
+		</div>
+		<div class="checkin">
+			<p>Check in: <strong><time>8:00 AM </time></strong> or <strong>1:00 PM</strong></p>
+			<p>Check out: <strong><time>12:00 PM </time></strong> or <strong>5:00 PM</strong></p>
+		</div><!--- .checkin --> 
+		
+	</div> <!--- .care --> 
+	<div class="clearfix games">
+		<div class="games-header">
+			<p>Games <br><br></p>
+		</div>
+		<div class="game-names">
+			<ul>
+				<li>
+					<div class="frisbeeimg"><img src="images/icons/frisbee.svg" alt="Frisbee"></div>
+					<div class="frisbee"><p>Frisbee</p></div>
+				</li>
+				<li>
+					<div class="poolimg"><img src="images/icons/pool.svg" alt="pool"></div>
+					<div class="pool"><p>Swimming</p></div>
+				</li>	
+				<li>
+					<div class="fetchimg"><img src="images/icons/bone.svg" alt="fetch"></div>
+					<div class="fetch"><p>Fetch</p></div>
+				</li>
+				
+			</ul>
+			
+		</div>
+		
+		
+	</div><!--- .games --> 
+
+	<div class="photos">
+		<img class="mySlides" src="images/dog-1.jpg">
+		<img class="mySlides" src="images/dog-2.jpg">
+		<img class="mySlides" src="images/dog-3.jpg">
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div><!--- .photos --> 
+ 	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+</script>
+
+	
+</body>
+</html>
